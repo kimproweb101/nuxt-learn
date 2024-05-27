@@ -18,4 +18,22 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.product-image {
+  width: 500px;
+  height: 375px;
+}
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 220px;
+  text-align: center;
+  padding: 0 1rem;
+}
+</style>
