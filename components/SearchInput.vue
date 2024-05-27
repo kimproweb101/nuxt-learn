@@ -5,9 +5,8 @@
       class="search-input"
       :value="value"
       @input="$emit('input', $event.target.value)"
-      @keyup.enter.exact="$emit('search')"
     />
-    <button class="btn" type="button" @click="$emit('search')">search</button>
+    <button type="button" @click="$emit('search')">search</button>
   </div>
 </template>
 
@@ -16,7 +15,7 @@ export default {
   props: {
     value: {
       type: String,
-      default: '',
+      default: () => '',
     },
   },
 }
